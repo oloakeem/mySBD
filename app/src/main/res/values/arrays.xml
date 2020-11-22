@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="listViewBackground">
+        <item>@color/listColor0</item>
+        <item>@color/listColor1</item>
+        <item>@color/listColor2</item>
+        <item>@color/listColor3</item>
+        <item>@color/listColor4</item>
+        <item>@color/listColor5</item>
+        <item>@color/listColor6</item>
+        <item>@color/listColor7</item>
+    </integer-array>
+    <array name="your_colors">
+        <item>#FFFFFF</item>
+        <item>#FFFFFF</item>
+        <item>#FFFFFF</item>
+        <item>#FFFFFF</item>
+        <item>#FFFFFF</item>
+        <item>#FFFFFF</item>
+        <item>#00293F</item>
+        <item>#00293F</item>
+
+    </array>
+    <string-array name="Push_tri">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+    </string-array>
+    <string-array name="Week_1">
+        <item>Day 1</item>
+        <item>Day 2</item>
+        <item>Day 3</item>
+        <item>Day 4</item>
+    </string-array>
+    <string-array name="Week_2">
+        <item>Day 1</item>
+        <item>Day 2</item>
+        <item>Day 3</item>
+        <item>Day 4</item>
+
+    </string-array>
+    <string-array name="Week_3">
+        <item>Day 1</item>
+        <item>Day 2</item>
+        <item>Day 3</item>
+        <item>Day 4</item>
+    </string-array>
+    <string-array name="Week_4">
+        <item>Day 1</item>
+        <item>Day 2</item>
+        <item>Day 3</item>
+        <item>Day 4</item>
+
+    </string-array>
+    <string-array name="Week_5">
+        <item>Day 1</item>
+        <item>Day 2</item>
+        <item>Day 3</item>
+        <item>Day 4</item>
+    </string-array>
+    <string-array name="Week_6">
+        <item>Day 1</item>
+        <item>Day 2</item>
+        <item>Day 3</item>
+        <item>Day 4</item>
+    </string-array>
+    <integer-array name="push_imgs">
+        <item>@drawable/isolation_shoulders</item>
+        <item>@drawable/isolation_reardelts</item>
+        <item>@drawable/isolation_triceps</item>
+    </integer-array>
+
+    <integer-array name="pull_imgs">
+        <item>@drawable/isolation_bicep</item>
+        <item>@drawable/isolation_back</item>
+        <item>@drawable/isolation_traps</item>
+    </integer-array>
+
+    <integer-array name="leg_imgs">
+        <item>@drawable/isolation_quads</item>
+        <item>@drawable/isolation_hamstrings</item>
+        <item>@drawable/isolation_calves</item>
+    </integer-array>
+</resources>

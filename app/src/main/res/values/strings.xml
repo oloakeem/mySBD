@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">mySBD</string>
+    <string name="title_activity_main">Ace 6 Weeks</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="saved_high_score_key">Empty</string>
+    <string name="summary">Tells the main idea of a piece of writing. The summary is always shorter than the main
+        text and leaves out details that are not
+        important to the paper you are writing. You always write a summary in your own words.</string>
+    <string name="day_one">Day One</string>
+    <string name="day_two">Day Two</string>
+    <string name="todo">TODO</string>
+    <string name="day_three">Day Three</string>
+    <string name="day_four">Day Four</string>
+    <string name="empty">Empty</string>
+    <string name="alert_Yes">Yes</string>
+    <string name="alert_No">No</string>
+    <string name="alert_message">Would you like to edit your stats?</string>
+
+</resources>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_weight="10"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/empty"
+        android:textSize="21sp"
+        android:text="@string/empty"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <GridLayout
+        android:layout_weight="8"
+        android:layout_above="@id/CheckMate"
+        android:layout_below="@id/empty"
+        android:id="@+id/mainGrid"
+        android:columnCount="2"
+        android:rowCount="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_margin="20dp"
+            android:id="@+id/EXC1"
+            android:elevation="5dp"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="6dp"
+            app:cardCornerRadius="5dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                >
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:id="@+id/abstract_image_1"
+                    android:src="@drawable/yellow_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"></ImageView>
+                <View
+                    android:background="@drawable/background_fade"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"></View>
+
+                <TextView
+                    android:layout_below="@+id/abstract_image_1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="#000"
+                    android:text="@string/day_one"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:visibility="invisible"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_baseline_check_circle_outline_24"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/checkImage1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp">
+
+                </ImageView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_margin="20dp"
+            android:layout_width="0dp"
+            android:elevation="5dp"
+            android:id="@+id/EXC2"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="6dp"
+            app:cardCornerRadius="5dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+
+                >
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:src="@drawable/red_background"
+                    android:id="@+id/abstract_image_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"></ImageView>
+                <View
+                    android:background="@drawable/background_fade"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"></View>
+
+                <TextView
+                    android:layout_below="@+id/abstract_image_2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="#000"
+                    android:text="@string/day_two"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_baseline_check_circle_outline_24"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/checkImage2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"></ImageView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_margin="20dp"
+            android:layout_width="0dp"
+            android:elevation="5dp"
+            android:id="@+id/EXC3"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="6dp"
+            app:cardCornerRadius="5dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+
+                >
+                <ImageView
+                    android:src="@drawable/blue_background"
+                    android:id="@+id/abstract_image_3"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"></ImageView>
+                <View
+                    android:background="@drawable/background_fade"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"></View>
+
+                <TextView
+                    android:layout_below="@+id/abstract_image_3"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="#000"
+                    android:text="@string/day_three"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_baseline_check_circle_outline_24"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/checkImage3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"></ImageView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_margin="20dp"
+            android:layout_width="0dp"
+            android:elevation="5dp"
+            android:id="@+id/EXC4"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="6dp"
+            app:cardCornerRadius="5dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+
+                >
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:src="@drawable/purple_background"
+                    android:id="@+id/abstract_image_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"></ImageView>
+                <View
+                    android:background="@drawable/background_fade"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"></View>
+
+
+                <TextView
+                    android:layout_below="@+id/abstract_image_4"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="#000"
+                    android:text="@string/day_four"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@drawable/ic_baseline_check_circle_outline_24"
+                    android:visibility="invisible"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/checkImage4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"></ImageView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+<FrameLayout
+    android:id="@+id/CheckMate"
+    android:layout_weight="3"
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+    <ProgressBar
+        android:layout_gravity="bottom"
+        android:layout_weight="0"
+        android:id="@+id/week_PROG"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:padding="25dp"
+        android:progress="0"
+        android:progressBackgroundTint="#2F000000"
+        android:progressTint="#000000"
+        />
+</FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateStats">
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:text="Enter your current stats"
+        android:id="@+id/create_stats_TXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <RadioGroup
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/create_stats_TXT"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/input_switch"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <RadioButton
+            android:textStyle="bold"
+            android:layout_marginHorizontal="2dp"
+            android:layout_marginBottom="50dp"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:button="@null"
+            android:background="@drawable/basic_toggle"
+            android:id="@+id/input_LtoK"
+            android:textColor="@drawable/toggle_color"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:checked="false"
+            android:text="Lbs" />
+
+        <RadioButton
+            android:textStyle="bold"
+            android:layout_marginHorizontal="2dp"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:background="@drawable/basic_toggle"
+            android:button="@null"
+            android:textColor="@drawable/toggle_color"
+            android:id="@+id/input_KtoL"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:checked="false"
+
+            android:text="Kg" />
+
+    </RadioGroup>
+    <FrameLayout
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/input_switch"
+        android:id="@+id/name_FRAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:text="Name:"
+            android:id="@+id/name_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+            <EditText
+                android:textCursorDrawable="@null"
+                android:backgroundTint="#000"
+                android:id="@+id/name_ETXT"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/name_TXT"
+                android:hint="Enter name"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="@color/greyTint"
+                android:textSize="16sp"></EditText>
+</RelativeLayout>
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/name_FRAME"
+        android:id="@+id/squat_FRAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:text="Squat 1Rep Max"
+                android:textSize="20sp"
+                android:id="@+id/squat_TXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <EditText
+                android:textCursorDrawable="@null"
+                android:backgroundTint="#000"
+                android:maxLength="4"
+                android:id="@+id/squat_ETXT"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/squat_TXT"
+                android:hint="Enter "
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="@color/greyTint"
+                android:textSize="16sp"></EditText>
+            <TextView
+                android:layout_alignBottom="@id/squat_ETXT"
+                android:text="N/A"
+                android:layout_toRightOf="@id/squat_ETXT"
+                android:id="@+id/textViewSquat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/squat_FRAME"
+        android:id="@+id/bench_FRAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:text="Bench 1Rep Max"
+                android:textSize="20sp"
+                android:id="@+id/bench_TXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <EditText
+
+                android:textCursorDrawable="@null"
+                android:backgroundTint="#000"
+                android:maxLength="4"
+                android:textColorHint="@color/greyTint"
+                android:textColor="#000"
+                android:hint="Enter "
+                android:singleLine="true"
+                android:inputType="number"
+                android:layout_toRightOf="@id/bench_TXT"
+                android:id="@+id/bench_ETXT"
+                android:textSize="16sp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"></EditText>
+            <TextView
+                android:layout_alignBottom="@id/bench_ETXT"
+                android:text="N/A"
+                android:layout_toRightOf="@id/bench_ETXT"
+                android:id="@+id/textViewBench"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bench_FRAME"
+        android:id="@+id/deadlift_FRAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:text="Dead-Lift 1Rep Max"
+                android:textSize="20sp"
+                android:id="@+id/deadlift_TXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <EditText
+                android:textCursorDrawable="@null"
+                android:backgroundTint="#000"
+                android:maxLength="4"
+                android:textColor="#000"
+                android:textColorHint="@color/greyTint"
+                android:hint="Enter "
+                android:inputType="number"
+                android:singleLine="true"
+                android:layout_toRightOf="@id/deadlift_TXT"
+                android:id="@+id/deadlift_ETXT"
+                android:textSize="16sp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"></EditText>
+            <TextView
+                android:layout_alignBottom="@id/deadlift_ETXT"
+                android:text="N/A"
+                android:layout_toRightOf="@id/deadlift_ETXT"
+                android:id="@+id/textViewDead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </RelativeLayout>
+    </FrameLayout>
+    <Button
+        android:textColor="@color/colorWhite"
+        android:layout_marginHorizontal="50dp"
+        android:background="@drawable/round_button"
+        android:layout_below="@id/deadlift_FRAME"
+        android:id="@+id/btnAdd"
+        android:text="Create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Button>
+</RelativeLayout>
